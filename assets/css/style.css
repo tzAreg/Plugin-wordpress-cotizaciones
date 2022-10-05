@@ -1,0 +1,42 @@
+.content-mainTable{
+    width: 100%;
+    height: auto;
+}
+
+.content-searchBar{
+    width: 100%;
+    height: 8vh;
+}
+
+.w-40rem{
+    width: 40rem;
+}
+
+.fs-80em{
+    font-size: 0.80em;
+}
+
+.fs-70em{
+    font-size: 0.70em;
+}
+
+.cs{
+    position: absolute;
+    left: 3.5rem;
+    width: 16.5rem;
+    height: 10rem;
+    background-color: #f9f9f9;
+    border: 1px solid #000;
+}
+
+.none{
+    display: none;
+}
+
+.block{
+    display: block;
+}
+
+.form{
+    width: 100%;
+}

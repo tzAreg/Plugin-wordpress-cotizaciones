@@ -1,0 +1,105 @@
+[27-Sep-2022 10:50:24 Europe/Madrid] PHP Notice:  Trying to access array offset on value of type null in /home/generico/public_html/en/wp-content/plugins/kalsteinCotizacion/classes/searchProducts.php on line 22
+[27-Sep-2022 10:50:24 Europe/Madrid] PHP Notice:  Trying to access array offset on value of type null in /home/generico/public_html/en/wp-content/plugins/kalsteinCotizacion/classes/searchProducts.php on line 23
+[27-Sep-2022 10:50:24 Europe/Madrid] PHP Notice:  Trying to access array offset on value of type null in /home/generico/public_html/en/wp-content/plugins/kalsteinCotizacion/classes/searchProducts.php on line 24
+[27-Sep-2022 10:50:48 Europe/Madrid] PHP Notice:  Undefined index: model in /home/generico/public_html/en/wp-content/plugins/kalsteinCotizacion/classes/registerCotizacion.php on line 30
+[27-Sep-2022 10:50:48 Europe/Madrid] PHP Notice:  Undefined index: image in /home/generico/public_html/en/wp-content/plugins/kalsteinCotizacion/classes/registerCotizacion.php on line 31
+[27-Sep-2022 10:50:48 Europe/Madrid] PHP Notice:  Undefined index: maker in /home/generico/public_html/en/wp-content/plugins/kalsteinCotizacion/classes/registerCotizacion.php on line 32
+[27-Sep-2022 10:50:48 Europe/Madrid] PHP Notice:  Undefined variable: unid in /home/generico/public_html/en/wp-content/plugins/kalsteinCotizacion/classes/registerCotizacion.php on line 77
+[27-Sep-2022 10:51:03 Europe/Madrid] PHP Fatal error:  Uncaught Spipu\Html2Pdf\Exception\ImageException: Unable to get the size of the image [] in /home/generico/public_html/en/wp-content/plugins/kalsteinCotizacion/vendor/spipu/html2pdf/src/Html2Pdf.php:1521
+Stack trace:
+#0 /home/generico/public_html/en/wp-content/plugins/kalsteinCotizacion/vendor/spipu/html2pdf/src/Html2Pdf.php(5777): Spipu\Html2Pdf\Html2Pdf->_drawImage('', false)
+#1 /home/generico/public_html/en/wp-content/plugins/kalsteinCotizacion/vendor/spipu/html2pdf/src/Html2Pdf.php(1439): Spipu\Html2Pdf\Html2Pdf->_tag_open_IMG(Array)
+#2 /home/generico/public_html/en/wp-content/plugins/kalsteinCotizacion/vendor/spipu/html2pdf/src/Html2Pdf.php(1407): Spipu\Html2Pdf\Html2Pdf->_executeAction(Object(Spipu\Html2Pdf\Parsing\Node))
+#3 /home/generico/public_html/en/wp-content/plugins/kalsteinCotizacion/vendor/spipu/html2pdf/src/Html2Pdf.php(5597): Spipu\Html2Pdf\Html2Pdf->_makeHTMLcode()
+#4 /home/generico/public_html/en/wp-content/plugins/kalsteinCotizacion/vendor/spipu/html2pdf/src/Html2Pdf.php(1439): Spipu\Html2 in /home/generico/public_html/en/wp-content/plugins/kalsteinCotizacion/vendor/spipu/html2pdf/src/Html2Pdf.php on line 1521
+[27-Sep-2022 10:51:21 Europe/Madrid] PHP Fatal error:  Uncaught Spipu\Html2Pdf\Exception\ImageException: Unable to get the size of the image [] in /home/generico/public_html/en/wp-content/plugins/kalsteinCotizacion/vendor/spipu/html2pdf/src/Html2Pdf.php:1521
+Stack trace:
+#0 /home/generico/public_html/en/wp-content/plugins/kalsteinCotizacion/vendor/spipu/html2pdf/src/Html2Pdf.php(5777): Spipu\Html2Pdf\Html2Pdf->_drawImage('', false)
+#1 /home/generico/public_html/en/wp-content/plugins/kalsteinCotizacion/vendor/spipu/html2pdf/src/Html2Pdf.php(1439): Spipu\Html2Pdf\Html2Pdf->_tag_open_IMG(Array)
+#2 /home/generico/public_html/en/wp-content/plugins/kalsteinCotizacion/vendor/spipu/html2pdf/src/Html2Pdf.php(1407): Spipu\Html2Pdf\Html2Pdf->_executeAction(Object(Spipu\Html2Pdf\Parsing\Node))
+#3 /home/generico/public_html/en/wp-content/plugins/kalsteinCotizacion/vendor/spipu/html2pdf/src/Html2Pdf.php(5597): Spipu\Html2Pdf\Html2Pdf->_makeHTMLcode()
+#4 /home/generico/public_html/en/wp-content/plugins/kalsteinCotizacion/vendor/spipu/html2pdf/src/Html2Pdf.php(1439): Spipu\Html2 in /home/generico/public_html/en/wp-content/plugins/kalsteinCotizacion/vendor/spipu/html2pdf/src/Html2Pdf.php on line 1521
+[27-Sep-2022 13:26:36 Europe/Madrid] PHP Notice:  Undefined variable: idCotizacion in /home/generico/public_html/en/wp-content/plugins/kalsteinCotizacion/classes/template.php on line 9
+[27-Sep-2022 13:26:36 Europe/Madrid] PHP Notice:  Undefined variable: idCotizacion in /home/generico/public_html/en/wp-content/plugins/kalsteinCotizacion/classes/template.php on line 10
+[27-Sep-2022 13:26:36 Europe/Madrid] PHP Notice:  Trying to access array offset on value of type null in /home/generico/public_html/en/wp-content/plugins/kalsteinCotizacion/classes/template.php on line 15
+[27-Sep-2022 13:26:36 Europe/Madrid] PHP Notice:  Trying to access array offset on value of type null in /home/generico/public_html/en/wp-content/plugins/kalsteinCotizacion/classes/template.php on line 16
+[27-Sep-2022 13:26:36 Europe/Madrid] PHP Notice:  Trying to access array offset on value of type null in /home/generico/public_html/en/wp-content/plugins/kalsteinCotizacion/classes/template.php on line 17
+[27-Sep-2022 13:26:36 Europe/Madrid] PHP Notice:  Trying to access array offset on value of type null in /home/generico/public_html/en/wp-content/plugins/kalsteinCotizacion/classes/template.php on line 18
+[27-Sep-2022 13:26:36 Europe/Madrid] PHP Notice:  Trying to access array offset on value of type null in /home/generico/public_html/en/wp-content/plugins/kalsteinCotizacion/classes/template.php on line 22
+[27-Sep-2022 13:26:36 Europe/Madrid] PHP Notice:  Trying to access array offset on value of type null in /home/generico/public_html/en/wp-content/plugins/kalsteinCotizacion/classes/template.php on line 23
+[27-Sep-2022 13:26:36 Europe/Madrid] PHP Notice:  Trying to access array offset on value of type null in /home/generico/public_html/en/wp-content/plugins/kalsteinCotizacion/classes/template.php on line 24
+[27-Sep-2022 13:26:36 Europe/Madrid] PHP Notice:  Trying to access array offset on value of type null in /home/generico/public_html/en/wp-content/plugins/kalsteinCotizacion/classes/template.php on line 25
+[27-Sep-2022 13:26:36 Europe/Madrid] PHP Notice:  Trying to access array offset on value of type null in /home/generico/public_html/en/wp-content/plugins/kalsteinCotizacion/classes/template.php on line 26
+[27-Sep-2022 13:26:36 Europe/Madrid] PHP Notice:  Trying to access array offset on value of type null in /home/generico/public_html/en/wp-content/plugins/kalsteinCotizacion/classes/template.php on line 27
+[27-Sep-2022 18:44:34 Europe/Madrid] PHP Fatal error:  Uncaught Spipu\Html2Pdf\Exception\ImageException: Unable to get the size of the image [http://127.0.0.1/wp-local/wp-content/plugins/kalsteinCotizacion/assets/images/francia-pais.jpg] in /home/generico/public_html/en/wp-content/plugins/kalsteinCotizacion/vendor/spipu/html2pdf/src/Html2Pdf.php:1521
+Stack trace:
+#0 /home/generico/public_html/en/wp-content/plugins/kalsteinCotizacion/vendor/spipu/html2pdf/src/Html2Pdf.php(5777): Spipu\Html2Pdf\Html2Pdf->_drawImage('http://127.0.0....', false)
+#1 /home/generico/public_html/en/wp-content/plugins/kalsteinCotizacion/vendor/spipu/html2pdf/src/Html2Pdf.php(1439): Spipu\Html2Pdf\Html2Pdf->_tag_open_IMG(Array)
+#2 /home/generico/public_html/en/wp-content/plugins/kalsteinCotizacion/vendor/spipu/html2pdf/src/Html2Pdf.php(1407): Spipu\Html2Pdf\Html2Pdf->_executeAction(Object(Spipu\Html2Pdf\Parsing\Node))
+#3 /home/generico/public_html/en/wp-content/plugins/kalsteinCotizacion/vendor/spipu/html2pdf/src/Html2Pdf.php(3131): Spipu\Html2Pdf\Html2Pdf->_makeHTMLcode()
+#4 /home/generic in /home/generico/public_html/en/wp-content/plugins/kalsteinCotizacion/vendor/spipu/html2pdf/src/Html2Pdf.php on line 1521
+[27-Sep-2022 18:44:42 Europe/Madrid] PHP Fatal error:  Uncaught Spipu\Html2Pdf\Exception\ImageException: Unable to get the size of the image [http://127.0.0.1/wp-local/wp-content/plugins/kalsteinCotizacion/assets/images/francia-pais.jpg] in /home/generico/public_html/en/wp-content/plugins/kalsteinCotizacion/vendor/spipu/html2pdf/src/Html2Pdf.php:1521
+Stack trace:
+#0 /home/generico/public_html/en/wp-content/plugins/kalsteinCotizacion/vendor/spipu/html2pdf/src/Html2Pdf.php(5777): Spipu\Html2Pdf\Html2Pdf->_drawImage('http://127.0.0....', false)
+#1 /home/generico/public_html/en/wp-content/plugins/kalsteinCotizacion/vendor/spipu/html2pdf/src/Html2Pdf.php(1439): Spipu\Html2Pdf\Html2Pdf->_tag_open_IMG(Array)
+#2 /home/generico/public_html/en/wp-content/plugins/kalsteinCotizacion/vendor/spipu/html2pdf/src/Html2Pdf.php(1407): Spipu\Html2Pdf\Html2Pdf->_executeAction(Object(Spipu\Html2Pdf\Parsing\Node))
+#3 /home/generico/public_html/en/wp-content/plugins/kalsteinCotizacion/vendor/spipu/html2pdf/src/Html2Pdf.php(3131): Spipu\Html2Pdf\Html2Pdf->_makeHTMLcode()
+#4 /home/generic in /home/generico/public_html/en/wp-content/plugins/kalsteinCotizacion/vendor/spipu/html2pdf/src/Html2Pdf.php on line 1521
+[27-Sep-2022 20:28:57 Europe/Madrid] PHP Notice:  Undefined index: incoterm in /home/generico/public_html/en/wp-content/plugins/kalsteinCotizacion/classes/registerCotizacion.php on line 16
+[27-Sep-2022 20:28:57 Europe/Madrid] PHP Notice:  Undefined index: divisa in /home/generico/public_html/en/wp-content/plugins/kalsteinCotizacion/classes/registerCotizacion.php on line 17
+[27-Sep-2022 20:28:57 Europe/Madrid] PHP Notice:  Undefined index: pago in /home/generico/public_html/en/wp-content/plugins/kalsteinCotizacion/classes/registerCotizacion.php on line 18
+[27-Sep-2022 20:37:45 Europe/Madrid] PHP Notice:  Undefined index: incoterm in /home/generico/public_html/en/wp-content/plugins/kalsteinCotizacion/classes/registerCotizacion.php on line 16
+[27-Sep-2022 20:37:45 Europe/Madrid] PHP Notice:  Undefined index: divisa in /home/generico/public_html/en/wp-content/plugins/kalsteinCotizacion/classes/registerCotizacion.php on line 17
+[27-Sep-2022 20:37:45 Europe/Madrid] PHP Notice:  Undefined index: pago in /home/generico/public_html/en/wp-content/plugins/kalsteinCotizacion/classes/registerCotizacion.php on line 18
+[27-Sep-2022 20:41:23 Europe/Madrid] PHP Notice:  Undefined index: incoterm in /home/generico/public_html/en/wp-content/plugins/kalsteinCotizacion/classes/registerCotizacion.php on line 16
+[27-Sep-2022 20:41:23 Europe/Madrid] PHP Notice:  Undefined index: divisa in /home/generico/public_html/en/wp-content/plugins/kalsteinCotizacion/classes/registerCotizacion.php on line 17
+[27-Sep-2022 20:41:23 Europe/Madrid] PHP Notice:  Undefined index: pago in /home/generico/public_html/en/wp-content/plugins/kalsteinCotizacion/classes/registerCotizacion.php on line 18
+[28-Sep-2022 15:04:57 Europe/Madrid] PHP Notice:  Undefined index: model in /home/generico/public_html/en/wp-content/plugins/kalsteinCotizacion/classes/registerCotizacion.php on line 96
+[28-Sep-2022 15:04:57 Europe/Madrid] PHP Notice:  Undefined index: image in /home/generico/public_html/en/wp-content/plugins/kalsteinCotizacion/classes/registerCotizacion.php on line 97
+[28-Sep-2022 15:04:57 Europe/Madrid] PHP Notice:  Undefined index: maker in /home/generico/public_html/en/wp-content/plugins/kalsteinCotizacion/classes/registerCotizacion.php on line 98
+[28-Sep-2022 15:05:13 Europe/Madrid] PHP Fatal error:  Uncaught Spipu\Html2Pdf\Exception\ImageException: Unable to get the size of the image [] in /home/generico/public_html/en/wp-content/plugins/kalsteinCotizacion/vendor/spipu/html2pdf/src/Html2Pdf.php:1521
+Stack trace:
+#0 /home/generico/public_html/en/wp-content/plugins/kalsteinCotizacion/vendor/spipu/html2pdf/src/Html2Pdf.php(5777): Spipu\Html2Pdf\Html2Pdf->_drawImage('', false)
+#1 /home/generico/public_html/en/wp-content/plugins/kalsteinCotizacion/vendor/spipu/html2pdf/src/Html2Pdf.php(1439): Spipu\Html2Pdf\Html2Pdf->_tag_open_IMG(Array)
+#2 /home/generico/public_html/en/wp-content/plugins/kalsteinCotizacion/vendor/spipu/html2pdf/src/Html2Pdf.php(1407): Spipu\Html2Pdf\Html2Pdf->_executeAction(Object(Spipu\Html2Pdf\Parsing\Node))
+#3 /home/generico/public_html/en/wp-content/plugins/kalsteinCotizacion/vendor/spipu/html2pdf/src/Html2Pdf.php(5597): Spipu\Html2Pdf\Html2Pdf->_makeHTMLcode()
+#4 /home/generico/public_html/en/wp-content/plugins/kalsteinCotizacion/vendor/spipu/html2pdf/src/Html2Pdf.php(1439): Spipu\Html2 in /home/generico/public_html/en/wp-content/plugins/kalsteinCotizacion/vendor/spipu/html2pdf/src/Html2Pdf.php on line 1521
+[28-Sep-2022 15:08:11 Europe/Madrid] PHP Fatal error:  Uncaught Spipu\Html2Pdf\Exception\ImageException: Unable to get the size of the image [] in /home/generico/public_html/en/wp-content/plugins/kalsteinCotizacion/vendor/spipu/html2pdf/src/Html2Pdf.php:1521
+Stack trace:
+#0 /home/generico/public_html/en/wp-content/plugins/kalsteinCotizacion/vendor/spipu/html2pdf/src/Html2Pdf.php(5777): Spipu\Html2Pdf\Html2Pdf->_drawImage('', false)
+#1 /home/generico/public_html/en/wp-content/plugins/kalsteinCotizacion/vendor/spipu/html2pdf/src/Html2Pdf.php(1439): Spipu\Html2Pdf\Html2Pdf->_tag_open_IMG(Array)
+#2 /home/generico/public_html/en/wp-content/plugins/kalsteinCotizacion/vendor/spipu/html2pdf/src/Html2Pdf.php(1407): Spipu\Html2Pdf\Html2Pdf->_executeAction(Object(Spipu\Html2Pdf\Parsing\Node))
+#3 /home/generico/public_html/en/wp-content/plugins/kalsteinCotizacion/vendor/spipu/html2pdf/src/Html2Pdf.php(5597): Spipu\Html2Pdf\Html2Pdf->_makeHTMLcode()
+#4 /home/generico/public_html/en/wp-content/plugins/kalsteinCotizacion/vendor/spipu/html2pdf/src/Html2Pdf.php(1439): Spipu\Html2 in /home/generico/public_html/en/wp-content/plugins/kalsteinCotizacion/vendor/spipu/html2pdf/src/Html2Pdf.php on line 1521
+[28-Sep-2022 15:10:08 Europe/Madrid] PHP Fatal error:  Uncaught Spipu\Html2Pdf\Exception\ImageException: Unable to get the size of the image [] in /home/generico/public_html/en/wp-content/plugins/kalsteinCotizacion/vendor/spipu/html2pdf/src/Html2Pdf.php:1521
+Stack trace:
+#0 /home/generico/public_html/en/wp-content/plugins/kalsteinCotizacion/vendor/spipu/html2pdf/src/Html2Pdf.php(5777): Spipu\Html2Pdf\Html2Pdf->_drawImage('', false)
+#1 /home/generico/public_html/en/wp-content/plugins/kalsteinCotizacion/vendor/spipu/html2pdf/src/Html2Pdf.php(1439): Spipu\Html2Pdf\Html2Pdf->_tag_open_IMG(Array)
+#2 /home/generico/public_html/en/wp-content/plugins/kalsteinCotizacion/vendor/spipu/html2pdf/src/Html2Pdf.php(1407): Spipu\Html2Pdf\Html2Pdf->_executeAction(Object(Spipu\Html2Pdf\Parsing\Node))
+#3 /home/generico/public_html/en/wp-content/plugins/kalsteinCotizacion/vendor/spipu/html2pdf/src/Html2Pdf.php(5597): Spipu\Html2Pdf\Html2Pdf->_makeHTMLcode()
+#4 /home/generico/public_html/en/wp-content/plugins/kalsteinCotizacion/vendor/spipu/html2pdf/src/Html2Pdf.php(1439): Spipu\Html2 in /home/generico/public_html/en/wp-content/plugins/kalsteinCotizacion/vendor/spipu/html2pdf/src/Html2Pdf.php on line 1521
+[28-Sep-2022 15:11:43 Europe/Madrid] PHP Fatal error:  Uncaught Spipu\Html2Pdf\Exception\ImageException: Unable to get the size of the image [] in /home/generico/public_html/en/wp-content/plugins/kalsteinCotizacion/vendor/spipu/html2pdf/src/Html2Pdf.php:1521
+Stack trace:
+#0 /home/generico/public_html/en/wp-content/plugins/kalsteinCotizacion/vendor/spipu/html2pdf/src/Html2Pdf.php(5777): Spipu\Html2Pdf\Html2Pdf->_drawImage('', false)
+#1 /home/generico/public_html/en/wp-content/plugins/kalsteinCotizacion/vendor/spipu/html2pdf/src/Html2Pdf.php(1439): Spipu\Html2Pdf\Html2Pdf->_tag_open_IMG(Array)
+#2 /home/generico/public_html/en/wp-content/plugins/kalsteinCotizacion/vendor/spipu/html2pdf/src/Html2Pdf.php(1407): Spipu\Html2Pdf\Html2Pdf->_executeAction(Object(Spipu\Html2Pdf\Parsing\Node))
+#3 /home/generico/public_html/en/wp-content/plugins/kalsteinCotizacion/vendor/spipu/html2pdf/src/Html2Pdf.php(5597): Spipu\Html2Pdf\Html2Pdf->_makeHTMLcode()
+#4 /home/generico/public_html/en/wp-content/plugins/kalsteinCotizacion/vendor/spipu/html2pdf/src/Html2Pdf.php(1439): Spipu\Html2 in /home/generico/public_html/en/wp-content/plugins/kalsteinCotizacion/vendor/spipu/html2pdf/src/Html2Pdf.php on line 1521
+[28-Sep-2022 15:13:27 Europe/Madrid] PHP Fatal error:  Uncaught Spipu\Html2Pdf\Exception\ImageException: Unable to get the size of the image [] in /home/generico/public_html/en/wp-content/plugins/kalsteinCotizacion/vendor/spipu/html2pdf/src/Html2Pdf.php:1521
+Stack trace:
+#0 /home/generico/public_html/en/wp-content/plugins/kalsteinCotizacion/vendor/spipu/html2pdf/src/Html2Pdf.php(5777): Spipu\Html2Pdf\Html2Pdf->_drawImage('', false)
+#1 /home/generico/public_html/en/wp-content/plugins/kalsteinCotizacion/vendor/spipu/html2pdf/src/Html2Pdf.php(1439): Spipu\Html2Pdf\Html2Pdf->_tag_open_IMG(Array)
+#2 /home/generico/public_html/en/wp-content/plugins/kalsteinCotizacion/vendor/spipu/html2pdf/src/Html2Pdf.php(1407): Spipu\Html2Pdf\Html2Pdf->_executeAction(Object(Spipu\Html2Pdf\Parsing\Node))
+#3 /home/generico/public_html/en/wp-content/plugins/kalsteinCotizacion/vendor/spipu/html2pdf/src/Html2Pdf.php(5597): Spipu\Html2Pdf\Html2Pdf->_makeHTMLcode()
+#4 /home/generico/public_html/en/wp-content/plugins/kalsteinCotizacion/vendor/spipu/html2pdf/src/Html2Pdf.php(1439): Spipu\Html2 in /home/generico/public_html/en/wp-content/plugins/kalsteinCotizacion/vendor/spipu/html2pdf/src/Html2Pdf.php on line 1521
+[28-Sep-2022 15:14:54 Europe/Madrid] PHP Notice:  Undefined index: incoterm in /home/generico/public_html/en/wp-content/plugins/kalsteinCotizacion/classes/registerCotizacion.php on line 16
+[28-Sep-2022 15:14:54 Europe/Madrid] PHP Notice:  Undefined index: divisa in /home/generico/public_html/en/wp-content/plugins/kalsteinCotizacion/classes/registerCotizacion.php on line 17
+[28-Sep-2022 15:14:54 Europe/Madrid] PHP Notice:  Undefined index: pago in /home/generico/public_html/en/wp-content/plugins/kalsteinCotizacion/classes/registerCotizacion.php on line 18
+[28-Sep-2022 15:53:30 Europe/Madrid] PHP Notice:  Undefined index: incoterm in /home/generico/public_html/en/wp-content/plugins/kalsteinCotizacion/classes/registerCotizacion.php on line 16
+[28-Sep-2022 15:53:30 Europe/Madrid] PHP Notice:  Undefined index: divisa in /home/generico/public_html/en/wp-content/plugins/kalsteinCotizacion/classes/registerCotizacion.php on line 17
+[28-Sep-2022 15:53:30 Europe/Madrid] PHP Notice:  Undefined index: pago in /home/generico/public_html/en/wp-content/plugins/kalsteinCotizacion/classes/registerCotizacion.php on line 18
+[29-Sep-2022 19:44:48 Europe/Madrid] PHP Notice:  Undefined variable: newUrl in /home/generico/public_html/en/wp-content/plugins/kalsteinCotizacion/classes/registerCotizacion.php on line 143
+[29-Sep-2022 19:44:48 Europe/Madrid] PHP Notice:  Undefined variable: query2 in /home/generico/public_html/en/wp-content/plugins/kalsteinCotizacion/classes/registerCotizacion.php on line 144
+[29-Sep-2022 19:44:48 Europe/Madrid] PHP Warning:  mysqli::query(): Empty query in /home/generico/public_html/en/wp-content/plugins/kalsteinCotizacion/classes/registerCotizacion.php on line 144
+[29-Sep-2022 19:48:52 Europe/Madrid] PHP Notice:  Undefined variable: query2 in /home/generico/public_html/en/wp-content/plugins/kalsteinCotizacion/classes/registerCotizacion.php on line 145
+[29-Sep-2022 19:48:52 Europe/Madrid] PHP Warning:  mysqli::query(): Empty query in /home/generico/public_html/en/wp-content/plugins/kalsteinCotizacion/classes/registerCotizacion.php on line 145

@@ -1,0 +1,973 @@
+.cp01{
+    float: left;
+    height: 103.5%;
+    margin-top: -7mm;
+    margin-left: -10mm;
+    margin-bottom: -10mm;
+}
+
+.cp02{
+    float: left;
+    width: 106.5%;
+    height: 103.5%;
+    margin-top: -7mm;
+    margin-left: -10mm;
+    margin-bottom: -10mm;
+}
+
+.h-01{
+    float: left;
+    width: 107%;
+    height: 30%;
+}
+
+.f-01{
+    float: left;
+    width: 100%;
+    height: 20%;
+    margin-top: 36%;
+}
+
+.b-01{
+    float: left;
+    width: 100%;
+    height: 68.9%;
+    margin-top: 7mm;
+    margin-bottom: -7mm;
+    background-size: 90%;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+}
+
+.id{
+    float: left;
+    width: 100%;
+    height: 40%;
+}
+
+.qr{
+    position: absolute;
+    top: 260mm;
+    right: 10mm;
+    width: 10%;
+    height: 30%;
+    background-color: black;
+}
+
+.logo{
+    float: left;
+    width: 49.9%;
+    height: 100%;
+}
+
+.hr{
+    position: absolute;
+    top: 140mm;
+    left: 50%;
+    width: 0.1%;
+    height: 35%;
+    margin-top: 5%;
+    background-color: rgb(190, 236, 236);
+}
+
+.n-id{
+    position: absolute;
+    top: 148mm;
+    left: 52%;
+    width: 50%;
+    height: 30%;
+}
+
+.co{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: lighter;
+    padding: 0;
+    margin: 0;
+}
+
+.id-title{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 45px;
+    color: #213280;
+}
+
+.id-n{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: 45px;
+    color: #213280;
+}
+
+.msj{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+.f-text{
+    position: absolute;
+    top: 262mm;
+    right: 33mm;
+    width: 27%;
+}
+
+.l-1{
+    margin: 0px;
+    padding: 0px;
+    font-size: 10px;
+}
+
+.l-2{
+    margin: 0px;
+    padding: 0px;
+    font-size: 10px;
+    margin-top: 0.8mm;
+}
+
+.l-3{
+    margin: 0px;
+    padding: 0px;
+    font-size: 10px;
+    margin-top: 0.8mm;
+}
+
+.l-4{
+    margin: 0px;
+    padding: 0px;
+    font-size: 10px;
+    margin-top: 0.8mm;
+}
+
+.l-5{
+    margin: 0px;
+    padding: 0px;
+    font-size: 10px;
+    margin-top: 0.8mm;
+}
+
+.hr-2{
+    position: absolute;
+    top: 260mm;
+    right: 95mm;
+    width: 0.1%;
+    height: 55%;
+    margin-top: 2%;
+    background-color: rgb(190, 236, 236);
+}
+
+.img-logo2{
+    position: absolute;
+    top: 255mm;
+    right: 95mm;
+    width: 30%;
+    height: 60%;
+}
+
+/* Página 2*/
+.style-01{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30%;
+    height: 20mm;
+    background-color: #213280;
+}
+
+.style-02{
+    position: absolute;
+    top: 0;
+    right: 65mm;
+    width: 15%;
+    height: 20mm;
+    background-color: #2a7ec4;
+}
+
+.style-03{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 30%;
+    height: 20mm;
+    background-color: #213280;
+}
+
+.style-04{
+    position: absolute;
+    bottom: 0;
+    right: 65mm;
+    width: 15%;
+    height: 20mm;
+    background-color: #2a7ec4;
+}
+
+.f2-text{
+    position: absolute;
+    bottom: 0;
+    left: 5mm;
+    width: 50%;
+    height: 5%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.t-1{
+    font-size: 12px;
+    margin: 0;
+    margin-left: 15mm;
+    margin-top: 3mm;
+    padding: 0;
+}
+
+.h-02{
+    width: 100%;
+    height: 15%;
+    margin-top: 15mm;
+}
+
+.logo-02{
+    width: 80mm;
+    height: 100%;
+}
+
+.hr-02{
+    position: absolute;
+    top: 28mm;
+    left: 81mm;
+    width: 0.1mm;
+    height: 50%;
+    background-color: #000;
+}
+
+.h-text-02{
+    position: absolute;
+    top: 31mm;
+    left: 84mm;
+    width: 130mm;
+    height: 50%;
+}
+
+.lt-01{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    font-size: 10px;
+}
+
+.lt-02{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    font-size: 22px;
+    font-weight: bold;
+    color: #213280;
+    margin-top: 1mm;
+}
+
+.lt-03{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    margin-top: 1mm;
+    font-size: 11px;
+}
+
+.p2img-01{
+    position: absolute;
+    top: 70mm;
+    right: 0;
+    width: 75mm;
+    height: 60mm;
+}
+
+.p2img-02{
+    position: absolute;
+    top: 135mm;
+    right: 0;
+    width: 75mm;
+    height: 60mm;
+}
+
+.p2img-03{
+    position: absolute;
+    top: 200mm;
+    right: 0;
+    width: 75mm;
+    height: 60mm;
+}
+
+.cmsj-01{
+    position: absolute;
+    top: 77mm;
+    left: 15mm;
+    width: 60mm;
+    height: 50mm;
+}
+
+.cmsj-02{
+    position: absolute;
+    top: 77mm;
+    left: 80mm;
+    width: 60mm;
+    height: 50mm;
+}
+
+.cmsj-03{
+    position: absolute;
+    top: 140mm;
+    left: 15mm;
+    width: 60mm;
+    height: 50mm;
+}
+
+.cmsj-04{
+    position: absolute;
+    top: 140mm;
+    left: 80mm;
+    width: 60mm;
+    height: 50mm;
+}
+
+.cmsj-05{
+    position: absolute;
+    top: 207mm;
+    left: 15mm;
+    width: 60mm;
+    height: 50mm;
+}
+
+.cmsj-06{
+    position: absolute;
+    top: 207mm;
+    left: 80mm;
+    width: 60mm;
+    height: 50mm;
+}
+
+.i{
+    width: 30%;
+    height: 100%;
+}
+
+.hr-03{
+    width: 0.2mm;
+    height: 25mm;
+    background-color: #000;
+    position: absolute;
+    top: 20mm;
+    left: 19mm;
+}
+
+.i-text{
+    position: absolute;
+    top: 0;
+    left: 20mm;
+    width: 40mm;
+    height: 100%;
+}
+
+.i-title{
+    color: #213280;
+    font-weight: bold;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    margin-top: 23mm;
+    margin-left: 2mm;
+}
+
+.i-title1{
+    color: #213280;
+    font-weight: bold;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    margin-top: 21mm;
+    margin-left: 2mm;
+}
+
+.i-title2{
+    color: #213280;
+    font-weight: bold;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    margin-top: 26mm;
+    margin-left: 2mm;
+}
+
+.i-title3{
+    color: #213280;
+    font-weight: bold;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    margin-top: 24mm;
+    margin-left: 2mm;
+}
+
+.i-p{
+    font-size: 9px;
+    margin: 0;
+    padding: 0;
+    margin-left: 2mm;
+    margin-top: 1mm;
+}
+
+/* Páginas de productos */
+.ht{
+    width: 107%;
+    height: 15%;
+    margin-top: -7mm;
+    margin-left: -10mm;
+}
+
+.logo-03{
+    width: 40%;
+    height: 100%;
+}
+
+.tp-01{
+    position: absolute;
+    top: 26mm;
+    left: 60mm;
+    font-size: 9px;
+}
+
+.tp-02{
+    position: absolute;
+    top: 20mm;
+    right: 30mm;
+    font-size: 12px;
+}
+
+.hr-04{
+    position: absolute;
+    top: 30mm;
+    left: 10mm;
+    width: 90%;
+    height: 0.1mm;
+    background-color: #000;
+}
+
+.cliente{
+    position: absolute;
+    top: 31mm;  
+    left: 10mm;  
+    width: 90%;
+    height: 5%;
+}
+
+.sres{
+    position: absolute;
+}
+
+.atc{
+    position: absolute;
+    left: 90mm;
+}
+
+.ft{
+    width: 100%;
+    height: 15%;
+}
+
+.ft-01{
+    width: 100%;
+    height: 40.25%;
+}
+
+.hr-05{
+    width: 90%;
+    margin-left: 10mm;
+    height: 0.5%;
+    margin-top: 0.5%;
+    background-color: #000;
+}
+
+.ft-02{
+    width: 100%;
+    height: 40.25%;
+}
+
+.img-ce{
+    width: 15mm;
+    height: 20mm;
+    margin-left: 8mm;
+}
+
+.text-ce{
+    position: absolute;
+    top: 257mm;
+    left: 25mm;
+    width: 72mm;
+    height: 20mm;
+}
+
+.img-cora{
+    position: absolute;
+    top: 249mm;
+    left: 106mm;
+    width: 15mm;
+    height: 20mm;
+    margin-left: mm;
+}
+
+.text-cora{
+    position: absolute;
+    top: 256mm;
+    left: 123mm;
+    width: 72mm;
+    height: 20mm;
+}
+
+.ft-02-text{
+    position: absolute;
+    top: 272mm;
+    left: 75mm;
+    width: 60mm;
+    height: 20mm;
+    text-align: center;
+}
+
+.ftn-3{
+    position: absolute;
+    top: 272mm;
+    right: 10mm;
+    width: 25mm;
+    height: 20mm;
+}
+
+.c-table{
+    width: 90%;
+    height: 8mm;
+    margin-left: 10mm;
+    margin-top: 10mm;
+}
+
+.td-i{
+    position: absolute;
+    width: 9mm;
+    height: 1mm;
+    background-color: #213280;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    font-size: 12px;
+    padding-top: 3mm;
+    border: inherit 1px solid #fff;
+}
+
+.tdb-i{
+    width: 10mm;
+    height: 36.66mm;
+    font-weight: bold;
+    text-align: right;
+    padding-right: 5mm;
+}
+
+.td-m{
+    position: absolute;
+    width: 16mm;
+    height: 2mm;
+    background-color: #213280;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    font-size: 12px;
+    padding-top: 3mm;
+    border: inherit 1px solid #fff;
+}
+
+.tdb-m{
+    width: 18mm;
+    height: 36.66mm;
+    text-align: center;
+    font-size: 11px;
+}
+
+.stdb{
+    width: 100%;
+    height: 100%;
+}
+
+.td-im{
+    position: absolute;
+    width: 32mm;
+    height: 2mm;
+    background-color: #213280;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    font-size: 12px;
+    padding-top: 3mm;
+    border: inherit 1px solid #fff;
+}
+
+.tdb-img{
+    width: 34mm;
+    height: 36.66mm;
+}
+
+.td-d{
+    position: absolute;
+    width: 38mm;
+    height: 2mm;
+    background-color: #213280;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    font-size: 12px;
+    padding-top: 3mm;
+    border: inherit 1px solid #fff;
+}
+
+.tdb-d{
+    width: 38mm;
+    height: 36.66mm;
+}
+
+.td-c{
+    position: absolute;
+    width: 9mm;
+    height: 2mm;
+    background-color: #213280;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    font-size: 12px;
+    padding-top: 3mm;
+    border: inherit 1px solid #fff;
+}
+
+.tdb-c{
+    width: 9mm;
+    height: 36.66mm;
+    font-size: 11px;
+    text-align: center;
+}
+
+
+.td-u{
+    position: absolute;
+    width: 13mm;
+    height: 2mm;
+    background-color: #213280;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    font-size: 12px;
+    padding-top: 3mm;
+    border: inherit 1px solid #fff;
+}
+
+.tdb-u{
+    width: 14mm;
+    height: 36.66mm;
+    font-size: 11px;
+    text-align: center;
+}
+
+.td-v{
+    position: absolute;
+    width: 22mm;
+    height: 2mm;
+    background-color: #213280;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    font-size: 12px;
+    padding-top: 3mm;
+    border: inherit 1px solid #fff;
+}
+
+.tdb-v{
+    width: 23mm;
+    height: 36.66mm;
+    font-size: 12px;
+    text-align: right;
+}
+
+.td-vt{
+    position: absolute;
+    width: 22mm;
+    height: 2mm;
+    background-color: #213280;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    font-size: 12px;
+    padding-top: 3mm;
+    border: inherit 1px solid #fff;
+}
+
+.tdb-vt{
+    width: 23mm;
+    height: 36.66mm;
+    font-size: 12px;
+    text-align: right;
+}
+
+.bt{
+    width: 90%;
+    height: auto;
+    margin-left: 10mm;
+}
+
+.bt-02{
+    margin-top: 1mm;
+    width: 90%;
+    height: 80mm;
+    margin-left: 10mm;
+}
+
+.sbt-02{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.ob{
+    position: absolute;
+    width: 60%;
+    height: 100%;
+}
+
+.sob{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.ob-title{
+    position: absolute;
+    width: 45%;
+    height: 100%;
+}
+
+.ob-p{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 55%;
+    height: 100%;
+}
+
+.totales{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 39%;
+    height: 100%;
+}
+
+.subtotales{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.totales-t{
+    position: absolute;
+    width: 70%;
+    height: 100%;
+}
+
+.totales-n{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30%;
+    height: 100%;
+}
+
+
+/* Página 4 (Después de cargar los datos de la cotización)*/
+
+.cp-04{
+    width: 100%;
+    height: 100%;
+    background-color: #213280;
+}
+
+.style-05{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: -7mm;
+    margin-right: -3mm;
+    width: 35%;
+    height: 20mm;
+    background-color: #213280;
+}
+
+.style-06{
+    position: absolute;
+    top: 0;
+    right: 62mm;
+    margin-top: -7mm;
+    width: 15%;
+    height: 20mm;
+    background-color: #2a7ec4;
+}
+
+.style-07{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 35%;
+    height: 20mm;
+    margin-bottom: -7mm;
+    margin-right: -3mm;
+    background-color: #213280;
+}
+
+.style-08{
+    position: absolute;
+    bottom: 0;
+    right: 62mm;
+    width: 15%;
+    height: 20mm;
+    margin-bottom: -7mm;
+    background-color: #2a7ec4;
+}
+
+.t-1{
+    font-size: 12px;
+    margin: 0;
+    margin-left: 15mm;
+    margin-top: 3mm;
+    padding: 0;
+}
+
+.h4-02{
+    width: 100%;
+    height: 15%;
+    margin-top: 15mm;
+}
+
+.logo4-02{
+    width: 80mm;
+    height: 100%;
+}
+
+.hr4-02{
+    position: absolute;
+    top: 28mm;
+    left: 81mm;
+    width: 0.1mm;
+    height: 50%;
+    background-color: #000;
+}
+
+.h4-text-02{
+    position: absolute;
+    top: 31mm;
+    left: 84mm;
+    width: 130mm;
+    height: 50%;
+}
+
+.lt4-01{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    margin-top: 6mm;
+    font-size: 20px;
+    font-weight: bold;
+    color: #213280;
+}
+
+.main-text{
+    position: relative;
+    top: 10mm;
+    left: 10mm;
+    width: 110mm;
+    height: 200mm;
+}
+
+.i-list{
+    position: relative;
+    width: 10%;
+}
+
+.i-txt{
+    position: absolute;
+    top: 3.5mm;
+    right: 0;
+    width: 90%;
+}
+
+.i-txt2{
+    position: absolute;
+    top: 44.5mm;
+    right: 0;
+    width: 90%;
+}
+
+.i-txt3{
+    position: absolute;
+    top: 70.5mm;
+    right: 0;
+    width: 90%;
+}
+
+.i-txt4{
+    position: absolute;
+    top: 106.5mm;
+    right: 0;
+    width: 90%;
+}
+
+.i-txt5{
+    position: absolute;
+    top: 123.5mm;
+    right: 0;
+    width: 90%;
+}
+
+.logo-05{
+    position: absolute;
+    top: 25mm;
+    width: 80mm;
+    height: 50mm;
+}
+
+.img-loc{
+    position: absolute;
+    top: 25mm;
+    right: 0;
+    width: 70mm;
+    height: 70mm;
+    margin-right: -3mm;
+}
+
+.inf-cont{
+    position: absolute;
+    top: 25mm;
+    right: 65mm;
+    width: 55mm;
+    height: 53mm;
+}
+
+.f-last{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-bottom: -7mm;
+    width: 109mm;
+    height: 20mm;
+}
+
+.img-cont{
+    position: absolute;
+    width: 100%;
+    height: 180mm;
+    left: 0;
+    top: 85mm;
+}
