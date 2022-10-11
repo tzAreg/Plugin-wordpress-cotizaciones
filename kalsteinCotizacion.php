@@ -8,12 +8,12 @@
 
         Author: Alejandro Espidea
 
-        Version: 1.0.2
+        Version: 1.0.3
 
     */
 
 
-
+    
     function activated(){
 
         global $wpdb;
@@ -1734,16 +1734,46 @@
             $wpdb->query($sql4);
         }
 
+        $sql5 = "CREATE TABLE IF NOT EXISTS `{$wpdb->prefix}weights_air` (
+            `aid` int(11) NOT NULL AUTO_INCREMENT,
+            `weight_detalle` TEXT CHARACTER SET utf8 COLLATE utf8_spanish_ci NOT NULL ,
+            PRIMARY KEY (`aid`)
+            ) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;";     
+        $wpdb->query($sql5);
 
-        
+        $sql6 = "CREATE TABLE IF NOT EXISTS `{$wpdb->prefix}rates_air` (
+            `aid` int(11) NOT NULL AUTO_INCREMENT,
+            `rate_country` TEXT CHARACTER SET utf8 COLLATE utf8_spanish_ci NOT NULL ,
+            PRIMARY KEY (`aid`)
+            ) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;";     
+        $wpdb->query($sql6);        
+
+        $sql7 = "CREATE TABLE IF NOT EXISTS `{$wpdb->prefix}rates_maritime` (
+            `aid` int(11) NOT NULL AUTO_INCREMENT,
+            `rate_country` TEXT CHARACTER SET utf8 COLLATE utf8_spanish_ci NOT NULL ,
+            PRIMARY KEY (`aid`)
+            ) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;";     
+        $wpdb->query($sql7); 
+
+        $sql8 = "CREATE TABLE IF NOT EXISTS `{$wpdb->prefix}rates_country` (
+            `aid` int(11) NOT NULL AUTO_INCREMENT,
+            `rate_country` TEXT CHARACTER SET utf8 COLLATE utf8_spanish_ci NOT NULL ,
+            PRIMARY KEY (`aid`)
+            ) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;";     
+        $wpdb->query($sql8); 
+
+        $sql9 = "CREATE TABLE IF NOT EXISTS `{$wpdb->prefix}weights_maritime` (
+            `aid` int(11) NOT NULL AUTO_INCREMENT,
+            `weight_detalle` TEXT CHARACTER SET utf8 COLLATE utf8_spanish_ci NOT NULL ,
+            PRIMARY KEY (`aid`)
+            ) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;";     
+        $wpdb->query($sql9);
     }
-
-
 
     function deactivated(){
 
-        global $wpdb;
-
+        global $wpdb;    
+        
         $sql = "DROP TABLE `{$wpdb->prefix}cotizacion`";
         $wpdb->query($sql);
 
@@ -1752,6 +1782,21 @@
 
         $sql3 = "DROP TABLE `{$wpdb->prefix}paises`";
         $wpdb->query($sql3);
+
+        $sql4 = "DROP TABLE `{$wpdb->prefix}weights_air`";
+        $wpdb->query($sql4);
+
+        $sql5 = "DROP TABLE `{$wpdb->prefix}rates_air`";
+        $wpdb->query($sql5);
+
+        $sql6 = "DROP TABLE `{$wpdb->prefix}rates_maritime`";
+        $wpdb->query($sql6);
+
+        $sql7 = "DROP TABLE `{$wpdb->prefix}rates_country`";
+        $wpdb->query($sql7);
+
+        $sql8 = "DROP TABLE `{$wpdb->prefix}weights_maritime`";
+        $wpdb->query($sql8);
 
     }
 
@@ -1787,6 +1832,14 @@
 
         );
 
+        add_submenu_page(
+            plugin_dir_path(__FILE__).'classes/cotizacion.php', //Slug Parents
+            'Rates', //Título
+            'Rates', //Título del submenu
+            'manage_options', //Capability
+            plugin_dir_path(__FILE__).'classes/tarifas.php' //Slug
+        );
+
     }
 
 
@@ -1795,7 +1848,7 @@
 
     function bootstrapJS($hook){
 
-        if($hook != 'kalsteinCotizacion/classes/cotizacion.php'){
+        if($hook != 'kalsteinCotizacion/classes/cotizacion.php' && $hook != 'kalsteinCotizacion/classes/tarifas.php'){
 
             return ;
 
@@ -1813,7 +1866,7 @@
 
     function JS($hook){
 
-        if($hook != 'kalsteinCotizacion/classes/cotizacion.php'){
+        if($hook != 'kalsteinCotizacion/classes/cotizacion.php' && $hook != 'kalsteinCotizacion/classes/tarifas.php'){
 
             return ;
 
@@ -1831,7 +1884,7 @@
 
     function jQueryCookie($hook){
 
-        if($hook != 'kalsteinCotizacion/classes/cotizacion.php'){
+        if($hook != 'kalsteinCotizacion/classes/cotizacion.php' && $hook != 'kalsteinCotizacion/classes/tarifas.php'){
 
             return ;
 
@@ -1849,7 +1902,7 @@
 
     function bootstrapCSS($hook){
 
-        if($hook != 'kalsteinCotizacion/classes/cotizacion.php'){
+        if($hook != 'kalsteinCotizacion/classes/cotizacion.php' && $hook != 'kalsteinCotizacion/classes/tarifas.php'){
 
             return ;
 
@@ -1867,7 +1920,7 @@
 
      function CSS($hook){
 
-        if($hook != 'kalsteinCotizacion/classes/cotizacion.php'){
+        if($hook != 'kalsteinCotizacion/classes/cotizacion.php' && $hook != 'kalsteinCotizacion/classes/tarifas.php'){
 
             return ;
 

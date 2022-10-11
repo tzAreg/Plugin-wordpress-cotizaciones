@@ -11,7 +11,7 @@
 		while ($value = $resultado->fetch_assoc()) {
             $id = $value["id"];
             $iso = $value["iso"];
-            $nombre = $value["es"]; 
+            $nombre = $value["en"]; 
 
             $salida.="
                 <option value='$iso'>$iso - $nombre</option>

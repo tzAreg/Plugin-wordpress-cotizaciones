@@ -2,6 +2,12 @@ jQuery(document).ready(function($){
 
     searchCotizacion()
     searchCountry()
+    searchCountryRates()
+    searchWeightAir()
+    searchWeightAirEdit()
+    searchWeightMaritime()
+    searchWeightMaritimeEdit()
+    searchRates()
 
     $('.btn-add').click(function(e){
         e.preventDefault();
@@ -52,6 +58,11 @@ jQuery(document).ready(function($){
     $(document).on('keyup', '#i-searchCotizacion', function(){
         var valor = $(this).val()
         searchCotizacion(valor)
+    })
+
+    $(document).on('keyup', '#i-searchCountryRates', function(){
+        var valor = $(this).val()
+        searchRates(valor)
     })
 
     $(document).on('click', '.btnc', function(e){
@@ -128,6 +139,136 @@ jQuery(document).ready(function($){
     $(document).on('click', '#deleteOk', function(e){
         var valor = $('.idDelete').val()
         deleteCotizacion(valor)        
+    })
+
+    $(document).on('click', '#w-close', function(e){
+        $('#weightMaritime').removeClass('block')
+        $('#weightAir').removeClass('block')
+        $('#weightMaritime').addClass('none')
+        $('#weightAir').addClass('none')   
+    })
+
+    $(document).on('click', '#w-cancel', function(e){
+        $('#weightMaritime').removeClass('block')
+        $('#weightAir').removeClass('block')
+        $('#weightMaritime').addClass('none')
+        $('#weightAir').addClass('none')
+    })
+
+    $(document).on('click', '.r-close', function(e){
+        $('#newWeightMaritime').removeClass('block')
+        $('#newWeightAir').removeClass('block')
+        $('#newWeightMaritime').addClass('none')
+        $('#newWeightAir').addClass('none')          
+        $('#editWeightMaritime').removeClass('block')
+        $('#editWeightAir').removeClass('block')
+        $('#editWeightMaritime').addClass('none')
+        $('#editWeightAir').addClass('none')   
+        $('#modifyRate-content').removeClass('block')
+        $('#modifyRate-content').addClass('none')        
+        $('#newRate-content').removeClass('block')
+        $('#newRate-content').addClass('none')
+        $('#option1').removeAttr('checked')
+        $('#option2').removeAttr('checked') 
+        $('#country').val(0)
+        $('#countryEdit').val(0)
+        $('#weightTypeNew').val(0)
+        $('#weightTypeEdit').val(0)
+    })
+
+    $(document).on('click', '.r-cancel', function(e){
+        $('#newWeightMaritime').removeClass('block')
+        $('#newWeightAir').removeClass('block')
+        $('#newWeightMaritime').addClass('none')
+        $('#newWeightAir').addClass('none')  
+        $('#editWeightMaritime').removeClass('block')
+        $('#editWeightAir').removeClass('block')
+        $('#editWeightMaritime').addClass('none')
+        $('#editWeightAir').addClass('none')   
+        $('#modifyRate-content').removeClass('block')
+        $('#modifyRate-content').addClass('none')              
+        $('#newRate-content').removeClass('block')
+        $('#newRate-content').addClass('none')
+        $('#option1').removeAttr('checked')
+        $('#option2').removeAttr('checked') 
+        $('#country').val(0)
+        $('#countryEdit').val(0)        
+        $('#weightTypeNew').val(0)
+        $('#weightTypeEdit').val(0)
+    })
+
+    $(document).on('click', '#saveWeight', function(e){
+        if ($('#weightAir').hasClass('block')){
+            var valor = $('#i-kg').val()
+            addWeightAir(valor) 
+        }else{
+            if ($('#weightMaritime').hasClass('block')){
+                var valor = $('#i-m3').val()
+                addWeightMaritime(valor) 
+            }
+        }       
+    })
+
+    $(document).on('click', '#option1', function(e){
+        $('#modifyRate-content').removeClass('none')
+        $('#newRate-content').addClass('block')  
+        $('#modifyRate-content').removeClass('block')
+        $('#modifyRate-content').addClass('none')  
+    })
+
+    $(document).on('click', '#option2', function(e){
+        $('#modifyRate-content').removeClass('none')
+        $('#modifyRate-content').addClass('block')  
+        $('#newRate-content').removeClass('block')
+        $('#newRate-content').addClass('none')   
+    })
+
+    $(document).on('change', '#weightType', function(e){
+        var valor = $(this).val()
+        if (valor === '1'){
+            $('#weightMaritime').removeClass('block')
+            $('#weightMaritime').addClass('none')
+            $('#weightAir').removeClass('none')
+            $('#weightAir').addClass('block')
+        }else{
+            if (valor === '2'){
+                $('#weightAir').removeClass('block')
+                $('#weightAir').addClass('none')
+                $('#weightMaritime').removeClass('none')
+                $('#weightMaritime').addClass('block')
+            }else{
+                $('#weightMaritime').removeClass('block')
+                $('#weightAir').removeClass('block')
+                $('#weightMaritime').addClass('none')
+                $('#weightAir').addClass('none')
+            }
+        }
+    })
+
+    $(document).on('change', '#weightTypeEdit', function(e){
+        var valor = $(this).val()
+        if (valor === '1'){
+            $('#editWeightMaritime').removeClass('block')
+            $('#editWeightMaritime').addClass('none')
+            $('#editWeightAir').removeClass('none')
+            $('#editWeightAir').addClass('block')
+            var country = $('#countryEdit').val()
+            searchWeightAirEdit(country)
+        }else{
+            if (valor === '2'){
+                $('#editWeightAir').removeClass('block')
+                $('#editWeightAir').addClass('none')
+                $('#editWeightMaritime').removeClass('none')
+                $('#editWeightMaritime').addClass('block')
+                var country = $('#countryEdit').val()
+                searchWeightAirEdit(country)
+            }else{
+                $('#editWeightMaritime').removeClass('block')
+                $('#editWeightAir').removeClass('block')
+                $('#editWeightMaritime').addClass('none')
+                $('#editWeightAir').addClass('none')
+            }
+        }
     })
 
     $(document).on('click', '#btnSaved', function(e){
@@ -211,7 +352,7 @@ jQuery(document).ready(function($){
                                                 alert('There are fields that are empty, please provide the requested information.')
                                                 $('#envio').focus()
                                             } else {
-                                                updateCotizacion(sres, atc, subtotal, desc, subtotal2, envio, total, idEdit, incoterm, divisa, pago, mEnvio, destino, zipcode) 
+                                                savedCotizacion(sres, atc, subtotal, desc, subtotal2, envio, total, idEdit, incoterm, divisa, pago, newUrl, mEnvio, destino, zipcode) 
                                             }
                                         }
                                     }        
@@ -637,6 +778,326 @@ jQuery(document).ready(function($){
         .done(function(respuesta){
             $('#country').html(respuesta);
             $('#countryE').html(respuesta);
+            $('#country2').html(respuesta);
+        })
+        .fail(function(){
+            console.log("error");
+        })
+    }
+
+    function searchCountryRates(consulta){
+
+        $.ajax({
+            url: 'http://127.0.0.1/wp-local/wp-content/plugins/kalsteinCotizacion/classes/searchCountryRates.php',
+            type: 'POST',
+            data: {consulta},
+        })
+        .done(function(respuesta){
+            $('#countryEdit').html(respuesta);
+        })
+        .fail(function(){
+            console.log("error");
+        })
+    }
+
+
+    function searchWeightAir(consulta){
+
+        $.ajax({
+            url: 'http://127.0.0.1/wp-local/wp-content/plugins/kalsteinCotizacion/classes/searchWeightAir.php',
+            type: 'POST',
+            data: {consulta},
+        })
+        .done(function(respuesta){
+            $('#weightAirNewRate').html(respuesta);
+        })
+        .fail(function(){
+            console.log("error");
+        })
+    }
+
+    function searchWeightAirEdit(consulta){
+
+        $.ajax({
+            url: 'http://127.0.0.1/wp-local/wp-content/plugins/kalsteinCotizacion/classes/searchWeightAirEdit.php',
+            type: 'POST',
+            data: {consulta},
+        })
+        .done(function(respuesta){
+            $('#weightAirEditRate').html(respuesta);
+        })
+        .fail(function(){
+            console.log("error");
+        })
+    }
+
+    function searchWeightMaritime(consulta){
+
+        $.ajax({
+            url: 'http://127.0.0.1/wp-local/wp-content/plugins/kalsteinCotizacion/classes/searchWeightMaritime.php',
+            type: 'POST',
+            data: {consulta},
+        })
+        .done(function(respuesta){
+            $('#weightMaritimeNewRate').html(respuesta);
+        })
+        .fail(function(){
+            console.log("error");
+        })
+    }
+
+    function searchWeightMaritimeEdit(consulta){
+
+        $.ajax({
+            url: 'http://127.0.0.1/wp-local/wp-content/plugins/kalsteinCotizacion/classes/searchWeightMaritimeEdit.php',
+            type: 'POST',
+            data: {consulta},
+        })
+        .done(function(respuesta){
+            $('#weightMaritimeEditRate').html(respuesta);
+        })
+        .fail(function(){
+            console.log("error");
+        })
+    }
+
+    function addWeightAir(consulta){
+
+        $.ajax({
+            url: 'http://127.0.0.1/wp-local/wp-content/plugins/kalsteinCotizacion/classes/alterAir.php',
+            type: 'POST',
+            data: {consulta},
+        })
+        .done(function(respuesta){
+            var data = JSON.parse(respuesta)
+            if (data.register === 'exists'){
+                alert('The weight you are trying to add already exists in the database')
+            }else{
+                if (data.register === 'correcto'){
+                    alert('Weight was successfully recorded')
+                    $('#i-kg').val("") 
+                    $('#weightType').val(0)
+                    $('#weightMaritime').removeClass('block')
+                    $('#weightAir').removeClass('block')
+                    $('#weightMaritime').addClass('none')
+                    $('#weightAir').addClass('none')
+                    searchWeightAir()
+                    searchRates()
+                }
+            }
+        })
+        .fail(function(){
+            console.log("error");
+        })
+    }
+
+    function addWeightMaritime(consulta){
+
+        $.ajax({
+            url: 'http://127.0.0.1/wp-local/wp-content/plugins/kalsteinCotizacion/classes/alterMaritime.php',
+            type: 'POST',
+            data: {consulta},
+        })
+        .done(function(respuesta){
+            var data = JSON.parse(respuesta)
+            if (data.register === 'exists'){
+                alert('The weight you are trying to add already exists in the database')
+            }else{
+                if (data.register === 'correcto'){
+                    alert('Weight was successfully recorded')
+                    $('#weightMaritime').removeClass('block')
+                    $('#weightAir').removeClass('block')
+                    $('#weightMaritime').addClass('none')
+                    $('#weightAir').addClass('none')
+                    $('#i-m3').val("")
+                    $('#weightType').val(0)
+                    searchWeightMaritime()
+                    searchRates()
+                }
+            }
+        })
+        .fail(function(){
+            console.log("error");
+        })
+    }
+
+    function registerRateAir(country, weight, price){
+
+        $.ajax({
+            url: 'http://127.0.0.1/wp-local/wp-content/plugins/kalsteinCotizacion/classes/registerRateAir.php',
+            type: 'POST',
+            data: {country, weight, price},
+        })
+        .done(function(respuesta){
+            var data = JSON.parse(respuesta)
+            if (data.register === 'exists'){
+                alert('The country rate you are trying to add already exists in the database')
+            }else{
+                if (data.register === 'correcto'){
+                    alert("The country rate's was successfully recorded")
+                    $('#i-airPrice').val("")                    
+                    $('#option1').removeAttr('checked')
+                    $('#newRate-content').removeClass('block')
+                    $('#newRate-content').addClass('none')
+                    $('#newWeightAir').removeClass('block')
+                    $('#newWeightMaritime').removeClass('block')
+                    $('#newWeightAir').addClass('none')
+                    $('#newWeightMaritime').addClass('none')
+                    $('#weightAirNewRate').val(0)
+                    $('#weightTypeNew').val(0)
+                    $('#country2').val(0)
+                    searchWeightMaritime()
+                    searchRates()
+                }
+            }
+        })
+        .fail(function(){
+            console.log("error");
+        })
+    }
+
+    function registerRateMaritime(country, weight, price){
+
+        $.ajax({
+            url: 'http://127.0.0.1/wp-local/wp-content/plugins/kalsteinCotizacion/classes/registerRateMaritime.php',
+            type: 'POST',
+            data: {country, weight, price},
+        })
+        .done(function(respuesta){
+            var data = JSON.parse(respuesta)
+            if (data.register === 'exists'){
+                alert('The country rate you are trying to add already exists in the database')
+            }else{
+                if (data.register === 'correcto'){
+                    alert("The country rate's was successfully recorded")
+                    $('#i-maritimePrice').val("")                    
+                    $('#option1').removeAttr('checked')
+                    $('#newRate-content').removeClass('block')
+                    $('#newRate-content').addClass('none')                    
+                    $('#newWeightAir').removeClass('block')
+                    $('#newWeightMaritime').removeClass('block')
+                    $('#newWeightAir').addClass('none')
+                    $('#newWeightMaritime').addClass('none')
+                    $('#weightMaritimeNewRate').val(0)
+                    $('#weightTypeNew').val(0)
+                    $('#country2').val(0)
+                    searchWeightMaritime()
+                    searchRates()
+                }
+            }
+        })
+        .fail(function(){
+            console.log("error");
+        })
+    }
+
+    function updateRateAir(country, weight, price){
+
+        $.ajax({
+            url: 'http://127.0.0.1/wp-local/wp-content/plugins/kalsteinCotizacion/classes/updateRateAir.php',
+            type: 'POST',
+            data: {country, weight, price},
+        })
+        .done(function(respuesta){
+            var data = JSON.parse(respuesta)
+            if (data.update === 'correcto'){
+                alert("The rate was successfully changed!")
+                searchRates();
+                $('#i-airPriceEdit').val("")                    
+                $('#option2').removeAttr('checked')
+                $('#modifyRate-content').removeClass('block')
+                $('#modifyRate-content').addClass('none')
+                $('#editWeightAir').removeClass('block')
+                $('#editWeightMaritime').removeClass('block')
+                $('#editWeightAir').addClass('none')
+                $('#editWeightMaritime').addClass('none')
+                $('#weightAirEditRate').val(0)
+                $('#weightTypeEdit').val(0)
+                $('#countryEdit').val(0)
+            }else{
+                alert("The rate could not be modified due to an error.")
+            }
+        })
+        .fail(function(){
+            console.log("error");
+        })
+    }
+
+    function updateRateMaritime(country, weight, price){
+
+        $.ajax({
+            url: 'http://127.0.0.1/wp-local/wp-content/plugins/kalsteinCotizacion/classes/updateRateMaritime.php',
+            type: 'POST',
+            data: {country, weight, price},
+        })
+        .done(function(respuesta){
+            var data = JSON.parse(respuesta)
+            if (data.update === 'correcto'){
+                alert("The rate was successfully changed!")
+                searchRates();
+                $('#i-maritimePriceEdit').val("")                    
+                $('#option2').removeAttr('checked')
+                $('#modifyRate-content').removeClass('block')
+                $('#modifyRate-content').addClass('none')
+                $('#editWeightAir').removeClass('block')
+                $('#editWeightMaritime').removeClass('block')
+                $('#editWeightAir').addClass('none')
+                $('#editWeightMaritime').addClass('none')
+                $('#weightMaritimeEditRate').val(0)
+                $('#weightTypeEdit').val(0)
+                $('#countryEdit').val(0)
+            }else{
+                alert("The rate could not be modified due to an error.")
+            }
+        })
+        .fail(function(){
+            console.log("error");
+        })
+    }
+
+    function searchRates(consulta){
+
+        $.ajax({
+            url: 'http://127.0.0.1/wp-local/wp-content/plugins/kalsteinCotizacion/classes/searchRates.php',
+            type: 'POST',
+            data: {consulta},
+        })
+        .done(function(respuesta){
+            $('#rc').html(respuesta);
+        })
+        .fail(function(){
+            console.log("error");
+        })
+    }
+
+    function searchPriceWeightAir(consulta, consulta2){
+
+        $.ajax({
+            url: 'http://127.0.0.1/wp-local/wp-content/plugins/kalsteinCotizacion/classes/searchPriceWeightAir.php',
+            type: 'POST',
+            data: {consulta, consulta2},
+        })
+        .done(function(respuesta){
+            var data = JSON.parse(respuesta)
+            $('#i-airPriceEdit').val(data.price)
+            $('#i-airPriceEdit').focus()
+        })
+        .fail(function(){
+            console.log("error");
+        })
+    }
+
+    function searchPriceWeightMaritime(consulta, consulta2){
+
+        $.ajax({
+            url: 'http://127.0.0.1/wp-local/wp-content/plugins/kalsteinCotizacion/classes/searchPriceWeightMaritime.php',
+            type: 'POST',
+            data: {consulta, consulta2},
+        })
+        .done(function(respuesta){
+            var data = JSON.parse(respuesta)
+            $('#i-maritimePriceEdit').val(data.price)
+            $('#i-maritimePriceEdit').focus()
         })
         .fail(function(){
             console.log("error");
@@ -680,6 +1141,127 @@ jQuery(document).ready(function($){
         deleteProduct(aid)
         $('#itemE-'+valor+'').remove()
         
+    })
+
+    $(document).on('change', '#weightTypeNew', function(){
+        var valor = $(this).val()
+        if (valor === '1'){
+            $('#newWeightMaritime').removeClass('block')
+            $('#newWeightMaritime').addClass('none')
+            $('#newWeightAir').removeClass('none')
+            $('#newWeightAir').addClass('block')
+            var country = $('#country2').val()
+            searchWeightAir(country)
+        }else{
+            if (valor === '2'){
+                $('#newWeightAir').removeClass('block')
+                $('#newWeightAir').addClass('none')
+                $('#newWeightMaritime').removeClass('none')
+                $('#newWeightMaritime').addClass('block')
+                var country = $('#country2').val()
+                searchWeightMaritime(country)
+            }else{
+                $('#newWeightMaritime').removeClass('block')
+                $('#newWeightAir').removeClass('block')
+                $('#newWeightMaritime').addClass('none')
+                $('#newWeightAir').addClass('none')
+            }
+        }
+    })
+
+    $(document).on('change', '#country2', function(){
+        $('#weightTypeNew').val(0)
+        $('#newWeightAir').removeClass('block')
+        $('#newWeightAir').addClass('none')
+        $('#newWeightMaritime').removeClass('block')
+        $('#newWeightMaritime').addClass('none')
+    })
+
+    $(document).on('change', '#countryEdit', function(){
+        $('#weightTypeEdit').val(0)
+        $('#weightMaritimeEditRate').val(0)
+        $('#editWeightAir').removeClass('block')
+        $('#editWeightAir').addClass('none')
+        $('#editWeightMaritime').removeClass('block')
+        $('#editWeightMaritime').addClass('none')
+        $('#i-airPriceEdit').val("")
+        $('#i-maritimePriceEdit').val("")
+    })
+
+    $(document).on('change', '#weightAirEditRate', function(){
+        var valor = $(this).val()
+        var valor2 = $('#countryEdit').val()
+        if (valor2 == '0'){
+            alert('You need to select the country in which you want to change the rate.')
+            $('#weightAirEditRate').val(0)
+        }else{
+            if (valor == '0'){
+                alert('You must select the weight of the rate you want to change.')
+                $('#weightAirEditRate').val(0)
+                $('#i-airPriceEdit').val('')
+            }else{
+                searchPriceWeightAir(valor, valor2)
+            }
+        }
+    })
+
+    $(document).on('change', '#weightMaritimeEditRate', function(){
+        var valor = $(this).val()
+        var valor2 = $('#countryEdit').val()
+        if (valor2 == '0'){
+            alert('You need to select the country in which you want to change the rate.')
+            $('#weightAirEditRate').val(0)
+        }else{
+            if (valor == '0'){
+                alert('You must select the weight of the rate you want to change.')
+                $('#weightAirEditRate').val(0)
+                $('#i-airPriceEdit').val('')
+            }else{
+                searchPriceWeightMaritime(valor, valor2)
+            }
+        }
+    })
+
+    $(document).on('click', '#btnSavedNewRate', function(){
+        if ($('#newRate-content').hasClass('block')){
+            if ($('#newWeightAir').hasClass('block')){
+                var country = $('#country2').val()
+                var weight = $('#weightAirNewRate').val()
+                var price = $('#i-airPrice').val()
+
+                registerRateAir(country, weight, price)
+                searchCountryRates()
+            }else{
+                if ($('#newWeightMaritime').hasClass('block')){
+                    var country = $('#country2').val()
+                    var weight = $('#weightMaritimeNewRate').val()
+                    var price = $('#i-maritimePrice').val()
+    
+                    registerRateMaritime(country, weight, price)
+                    searchCountryRates()
+                }
+            }
+        }else{
+            if($('#modifyRate-content').hasClass('block')){
+                if ($('#editWeightAir').hasClass('block')){ 
+                    var country = $('#countryEdit').val()
+                    var weight = $('#weightAirEditRate').val()
+                    var price = $('#i-airPriceEdit').val()
+    
+                    updateRateAir(country, weight, price)
+                    searchCountryRates()
+                }else{
+                    if ($('#editWeightMaritime').hasClass('block')){
+                        var country = $('#countryEdit').val()
+                        var weight = $('#weightMaritimeEditRate').val()
+                        var price = $('#i-maritimePriceEdit').val()
+        
+                        updateRateMaritime(country, weight, price)
+                        searchCountryRates()
+                    }
+                }
+            }
+        }
     })
 })
 
